@@ -1,29 +1,73 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body class="bg-[rgba(2,3,23,1)] text-white">
-  <nav class="mx-auto flex justify-between items-center py-4 px-8 w-[70%] border-2 border-solid rounded-2xl border-[rgba(255,255,255,0.1)] mt-10"> 
-    <div class="w-[6%] border-2 border-solid border-[rgba(255,255,255,0.60)] rounded-md py-3 px-1 hover:cursor-pointer"><img src="assets/Plain-M.png" class="w-full"></div>
-    <ul class="flex justify-between w-[20%] ml-[38vw]">
-      <li><a href="#">About</a></li>
-      <li><a href="#">Work</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <button class="relative flex items-center border-[0.1px] border-solid border-red-400/30 rounded-md py-3 px-5 overflow-hidden cursor-pointer hover:border-red-400/65">
-      <i class="fa-solid fa-file mr-2.5" style="color: #ff3d3d;"></i>
-      <h3>Resume</h3>
-      <span class="absolute inset-x-0 h-0.5 -bottom-[1px] bg-gradient-to-r w-3/4 mx-auto from-transparent via-rose-300 to-transparent"></span>
-    </button>
-  </nav>
+  <!doctype html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+  </head>
+  <body class="bg-[rgba(2,3,23,1)] text-white">
+    <nav class="mx-auto flex justify-between items-center py-4 px-8 w-[70%] border-2 border-solid rounded-2xl border-[rgba(255,255,255,0.1)] mt-10"> 
+      <div class="w-[6%] border-2 border-solid border-[rgba(255,255,255,0.60)] rounded-md py-3 px-1 hover:cursor-pointer"><img src="assets/Plain-M.png" class="w-full"></div>
+      <ul class="flex justify-between w-[20%] ml-[32vw]">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <button class="relative flex items-center border-[0.1px] border-solid border-red-400/30 rounded-md py-3 px-5 overflow-hidden cursor-pointer hover:border-red-400/75">
+        <i class="fa-solid fa-file mr-2.5" style="color: #ff3d3d;"></i>
+        <h3>Resume</h3>
+        <span class="absolute inset-x-0 h-0.5 -bottom-[1px] bg-gradient-to-r w-3/4 mx-auto from-transparent via-rose-300 to-transparent"></span>
+      </button>
 
-  <header>
-    <div class="border-[1px] border-solid border-red-700 w-[25%] mx-auto my-44 b"></div>
-  </header>
+      <button class="bg-[#efefef] h-7 w-[6%] rounded-2xl cursor-pointer transition duration-500 ease-in-out light-control"><span class="block bg-[#999] w-[31%] h-5 rounded-full ml-1 transition duration-500 ease-in-out btn-ball"></span></button>
+    </nav>
 
-  <script src="https://kit.fontawesome.com/ad2f1382aa.js" crossorigin="anonymous"></script>
-</body>
-</html>
+    <header>
+      <div class="container">
+        <div class="intro">
+          <div class="lamp-container">
+            <div class="lamp mx-auto w-[8%]"><img src="assets/lamp.png" class="w-full"></div>
+            <div class="light ml-[33.8vw] w-[29%] -mt-1 invisible"><img src="assets/light.png" class="w-full"></div>
+          </div>
+          <div class="write-up w-fit mx-auto -mt-25 text-center">
+            <p class="text-lg py-2 text-[#b90025] transition duration-500 ease-in-out intro-p">Hi, I'm</p>
+            <h1 class="text-6xl font-black text-stroke-white opacity-90 transition duration-500 ease-in-out intro-h1">Marius Odediran</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-[50vh] mb-[50vh]">
+      <div class="container">
+        <div class="aboutme-page">
+          <div class="aboutme-flex flex">
+            <div class="about-left w-[30%] ml-[15vw] mt-[15vh]">
+              <h2 class="w-6 text-6xl font-black opacity-90 text-stroke-white mb-8">About Me.</h2>
+              <h4 class="text-lg mb-4">Junior Frontend Engineer</h4>
+              <p class="mb-[4vh]">I create eye-catching websites.</p>
+
+              <button class="relative flex items-center border-[0.1px] border-solid border-red-400/30 rounded-md py-3 px-5 overflow-hidden cursor-pointer hover:border-red-400/75">
+                <i class="fa-solid fa-file mr-2.5" style="color: #ff3d3d;"></i>
+                <h3>Resume</h3>
+                <span class="absolute inset-x-0 h-0.5 -bottom-[1px] bg-gradient-to-r w-3/4 mx-auto from-transparent via-rose-300 to-transparent"></span>
+              </button>
+            </div>
+            <div class="about-right w-[40%] border-2 border-solid border-b-0 border-[rgba(255,255,255,0.1)] rounded-2xl p-8 ml-1">
+              <p class="text-gray-400 text-base/7">Hi, I'm Emmanuel, a frontend engineer with a passion for crafting beautiful and user-friendly interfaces. My journey began in 2018 as a graphic designer, where I developed an eye for detail and a drive to create aesthetically pleasing designs. As I delved deeper into the world of design, I became fascinated with the idea of bringing my creations to life on the web and mobile devices.
+
+                This curiosity led me to transition into Frontend engineering, where I could combine my design skills with my newfound love for coding. Since then, I've had the privilege of working on numerous exciting projects, each one presenting a new challenge and opportunity to grow.
+                
+                Currently, I'm a frontend engineer at Seerbit, a payment gateway company, where I'm responsible for building fast, secure, and user-friendly interfaces for our customers. When I'm not coding, you can find me playing video games, watching football, or indulging in historical documentaries.
+                
+                Throughout my journey, I've learned that good design is not just about aesthetics; it's about creating an experience that resonates with users. As a frontend engineer, I strive to bridge the gap between design and development, crafting interfaces that are both beautiful and functional.</p>
+              <p>When I am not coding, I enjoy reading, playing video games, and spending time with my family.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/ad2f1382aa.js" crossorigin="anonymous"></script>
+    <script src="portfolio.js"></script>
+  </body>
+  </html>
