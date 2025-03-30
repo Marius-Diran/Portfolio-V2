@@ -22,10 +22,21 @@ body{
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.9s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .box.show {
+}  
+
+.box.show {
     opacity: 1;
     transform: translateY(0);
     transition: all 0.9s ease-in-out;
-  }
+}
+
+@keyframes fallIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px) rotateX(90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+    }
+}
