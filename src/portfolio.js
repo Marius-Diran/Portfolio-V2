@@ -3,6 +3,7 @@ const controlBall = document.querySelector('.btn-ball');
 const lampLight = document.querySelector('.light');
 const introP1 = document.querySelector('.intro-p');
 const introH1 = document.querySelector('.intro-h1');
+const boxes = document.querySelectorAll('.box');
 
 lightBtn.addEventListener('click', () => {
   if (lightBtn.style.backgroundColor === 'green') {
@@ -19,3 +20,22 @@ lightBtn.addEventListener('click', () => {
     introH1.style.color = '#FFFFFF';
   }
 })
+
+window.addEventListener('scroll', () => {
+  checkBoxes();
+});
+
+function checkBoxes() {
+  const triggerBottom = window.innerHeight * 1;
+  boxes.forEach(box => {
+    const boxTop = box.getBoundingClientRect().top;
+    const boxBottom = box.getBoundingClientRect().bottom;
+    if (boxTop < triggerBottom && boxBottom > 0) {
+      box.classList.add('show');
+    } else {
+      box.classList.remove('show');
+    }
+  });
+}
+
+checkBoxes(); // Initial check to show boxes on page load

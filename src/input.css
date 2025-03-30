@@ -17,3 +17,15 @@ body{
     color: rgb(2 6 23 / var(--tw-text-opacity));
     text-shadow: -.5px -.5px 0 #fff, .5px -.5px 0 #fff, -.5px .5px 0 #fff, .5px .5px 0 #fff;
 }
+
+.box {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .box.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.8s ease-in-out;
+  }
