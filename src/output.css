@@ -343,6 +343,9 @@
   .h-7 {
     height: calc(var(--spacing) * 7);
   }
+  .min-h-fit {
+    min-height: fit-content;
+  }
   .w-3 {
     width: calc(var(--spacing) * 3);
   }
