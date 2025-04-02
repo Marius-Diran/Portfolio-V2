@@ -259,6 +259,9 @@
   .mt-\[6vh\] {
     margin-top: 6vh;
   }
+  .mt-\[10vh\] {
+    margin-top: 10vh;
+  }
   .mt-\[15vh\] {
     margin-top: 15vh;
   }
@@ -267,6 +270,12 @@
   }
   .mt-\[30vh\] {
     margin-top: 30vh;
+  }
+  .mt-\[40vh\] {
+    margin-top: 40vh;
+  }
+  .mt-\[45vh\] {
+    margin-top: 45vh;
   }
   .mt-\[50vh\] {
     margin-top: 50vh;
@@ -325,6 +334,9 @@
   .flex {
     display: flex;
   }
+  .grid {
+    display: grid;
+  }
   .hidden {
     display: none;
   }
@@ -342,9 +354,6 @@
   }
   .h-7 {
     height: calc(var(--spacing) * 7);
-  }
-  .min-h-fit {
-    min-height: fit-content;
   }
   .w-3 {
     width: calc(var(--spacing) * 3);
@@ -403,6 +412,12 @@
   .resize {
     resize: both;
   }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .items-center {
     align-items: center;
   }
@@ -414,6 +429,9 @@
   }
   .justify-start {
     justify-content: flex-start;
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
   }
   .overflow-hidden {
     overflow: hidden;
@@ -576,12 +594,18 @@
   .text-\[0\.7rem\] {
     font-size: 0.7rem;
   }
+  .text-\[1\.2rem\] {
+    font-size: 1.2rem;
+  }
   .font-black {
     --tw-font-weight: var(--font-weight-black);
     font-weight: var(--font-weight-black);
   }
   .text-\[\#b90025\] {
     color: #b90025;
+  }
+  .text-\[rgb\(211\,211\,211\)\] {
+    color: rgb(211,211,211);
   }
   .text-gray-400 {
     color: var(--color-gray-400);
@@ -745,6 +769,23 @@ body {
     opacity: 1;
     transform: translateY(0) rotateX(0);
   }
+}
+.progress-bar {
+  margin: 2vh 0 0 8vw;
+  border: 1px solid rgb(48, 47, 47);
+  width: 70%;
+  height: 5vh;
+  background-color: rgb(48, 47, 47);
+  border-radius: 10px;
+}
+.inner-bars {
+  background-color: rgb(227, 38, 54);
+  width: 90%;
+  margin: 0.62vh 0 0 0.5vw;
+  height: 3.5vh;
+  border-radius: 10px;
+  animation: progress 2s ease-in-out forwards;
+  animation-delay: 0.5s;
 }
 @property --tw-rotate-x {
   syntax: "*";

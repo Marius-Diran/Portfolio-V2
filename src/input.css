@@ -40,3 +40,22 @@ body{
         transform: translateY(0) rotateX(0);
     }
 }
+
+.progress-bar{
+    margin: 2vh 0 0 8vw;
+    border: 1px solid rgb(48, 47, 47);
+    width: 70%;
+    height: 5vh;
+    background-color: rgb(48, 47, 47);
+    border-radius: 10px;
+}
+
+.inner-bars{
+    background-color: rgb(227, 38, 54);
+    width: 90%;
+    margin: 0.62vh 0 0 0.5vw;
+    height: 3.5vh;
+    border-radius: 10px;
+    animation: progress 2s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
