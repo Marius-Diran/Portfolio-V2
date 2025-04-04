@@ -220,9 +220,6 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
-  .z-10 {
-    z-index: 10;
-  }
   .z-50 {
     z-index: 50;
   }
@@ -268,6 +265,9 @@
   .mt-\[6vh\] {
     margin-top: 6vh;
   }
+  .mt-\[9vh\] {
+    margin-top: 9vh;
+  }
   .mt-\[10vh\] {
     margin-top: 10vh;
   }
@@ -279,6 +279,9 @@
   }
   .mt-\[30vh\] {
     margin-top: 30vh;
+  }
+  .mt-\[35vh\] {
+    margin-top: 35vh;
   }
   .mt-\[50vh\] {
     margin-top: 50vh;
@@ -399,6 +402,9 @@
   }
   .w-full {
     width: 100%;
+  }
+  .grow {
+    flex-grow: 1;
   }
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
@@ -611,6 +617,9 @@
   .text-red-500 {
     color: var(--color-red-500);
   }
+  .text-rose-500 {
+    color: var(--color-rose-500);
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -732,6 +741,9 @@
   }
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -740,6 +752,15 @@ body {
 .container {
   width: 98%;
   margin: auto;
+}
+#home {
+  scroll-margin-top: 10rem;
+}
+#about {
+  scroll-margin-top: 10rem;
+}
+#work {
+  scroll-margin-top: 15rem;
 }
 .text-stroke-white {
   --tw-text-opacity: 1;

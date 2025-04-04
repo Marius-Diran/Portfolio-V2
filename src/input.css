@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Inter', sans-serif;
     font-size: 16px;
@@ -10,6 +15,17 @@ body{
 .container{
     width: 98%;
     margin: auto;
+}
+
+#home {
+    scroll-margin-top: 10rem; /* Adjust this value based on your nav height */
+}
+
+#about {
+    scroll-margin-top: 10rem; /* Adjust this value based on your nav height */
+}
+#work {
+    scroll-margin-top: 15rem; /* Adjust this value based on your nav height */
 }
 
 .text-stroke-white {

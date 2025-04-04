@@ -7,11 +7,11 @@
   </head>
   <body class="bg-[rgba(2,3,23,1)] text-white overflow-x-hidden scroll-smooth">
     <nav class="mx-auto flex justify-between items-center py-4 px-8 w-[70%] border-[0.5px] border-solid rounded-2xl border-[rgba(255,255,255,0.1)] bg-black/5 backdrop-blur-lg fixed top-12 left-0 right-0 z-50"> 
-      <div class="w-[6%] border-[1px] border-solid border-[rgba(255,255,255,0.60)] rounded-md py-3 px-1 hover:cursor-pointer hover:border-red-400"><img src="assets/Plain-M.png" class="w-full"></div>
+      <div class="w-[6%] border-[1px] border-solid border-[rgba(255,255,255,0.60)] rounded-md py-3 px-1 hover:cursor-pointer hover:border-red-400"><a href="#home"><img src="assets/Plain-M.png" class="w-full"></a></div>
       <ul class="flex justify-between w-[20%] ml-[32vw]">
-        <li class="text-sm"><a href="#">About</a></li>
-        <li class="text-sm"><a href="#">Work</a></li>
-        <li class="text-sm"><a href="#">Contact</a></li>
+        <li class="text-sm"><a href="#about">About</a></li>
+        <li class="text-sm"><a href="#work">Work</a></li>
+        <li class="text-sm"><a href="#contact">Contact</a></li>
       </ul>
       <button class="relative flex items-center border-[0.1px] border-solid border-red-400/30 rounded-md py-3 px-5 overflow-hidden cursor-pointer hover:border-red-400/75">
         <i class="fa-solid fa-file mr-2.5" style="color: #ff3d3d;"></i>
@@ -25,7 +25,7 @@
     <header class="mt-[17vh]">
       <div class="container">
         <div class="intro">
-          <div class="lamp-container">
+          <div class="lamp-container" id="home">
             <div class="lamp mx-auto w-[8%]"><img src="assets/lamp.png" class="w-full"></div>
             <div class="light ml-[33.8vw] w-[29%] -mt-1 invisible"><img src="assets/light.png" class="w-full"></div>
           </div>
@@ -37,9 +37,9 @@
       </div>
     </header>
 
-    <main class="mt-[50vh]">
+    <main class="mt-[35vh]">
       <div class="container">
-        <div class="aboutme-page box mb-[30vh]">
+        <div class="aboutme-page box mb-[30vh]" id="about">
           <div class="aboutme-flex flex">
             <div class="about-left w-[30%] ml-[15vw] mt-[15vh]">
               <h2 class="w-6 text-6xl font-black opacity-90 text-stroke-white mb-8">About Me.</h2>
@@ -52,20 +52,21 @@
                 <span class="absolute inset-x-0 h-0.5 -bottom-[1px] bg-gradient-to-r w-3/4 mx-auto from-transparent via-rose-300 to-transparent"></span>
               </button>
             </div>
-            <div class="about-right w-[40%] border-[1px] border-solid border-b-0 border-[rgba(255,255,255,0.1)] border-l-red-500 border-t-red-300 border-r-red-300 rounded-2xl p-8 ml-1">
-              <p class="text-gray-400 text-base/7">Hi, I'm Emmanuel, a frontend engineer with a passion for crafting beautiful and user-friendly interfaces. My journey began in 2018 as a graphic designer, where I developed an eye for detail and a drive to create aesthetically pleasing designs. As I delved deeper into the world of design, I became fascinated with the idea of bringing my creations to life on the web and mobile devices.
+            <div class="about-right w-[40%] mt-[9vh] border-[1px] border-solid border-b-0 border-[rgba(255,255,255,0.1)] border-l-red-500 border-t-red-300 border-r-red-300 rounded-2xl p-8 ml-1">
+              <p class="text-gray-400 text-base/7">Hi, <span class="text-white">I'm Marius,</span> a frontend engineer with a passion for crafting beautiful and user-friendly interfaces. My journey began in 2022 as a beginner in the world of Computer Science, where I developed an eye for detail and a drive to create aesthetically pleasing designs. As I delved deeper into the computer science space, I became fascinated with the idea of creating websites and apps on the web and mobile devices.
 
-                This curiosity led me to transition into Frontend engineering, where I could combine my design skills with my newfound love for coding. Since then, I've had the privilege of working on numerous exciting projects, each one presenting a new challenge and opportunity to grow.
+                <br><br>
+
+                This curiosity led me to transition into <span class="text-white">Frontend engineering.</span> Since then, I've had the privilege of working on numerous exciting projects, each one presenting a new challenge and opportunity to grow.
+
+                <br><br>
                 
-                Currently, I'm a frontend engineer at Seerbit, a payment gateway company, where I'm responsible for building fast, secure, and user-friendly interfaces for our customers. When I'm not coding, you can find me playing video games, watching football, or indulging in historical documentaries.
-                
-                Throughout my journey, I've learned that good design is not just about aesthetics; it's about creating an experience that resonates with users. As a frontend engineer, I strive to bridge the gap between design and development, crafting interfaces that are both beautiful and functional.</p>
-              <p>When I am not coding, I enjoy reading, playing video games, and spending time with my family.</p>
+                Currently, an <span class="text-rose-500">Aspiring front-end developer,</span> with the passion and enough room to grow and challenge myself. When I'm not coding, you can find me playing video games, watching football, spending time with family, or indulging myself on Youtube for the next big thing.
             </div>
           </div>
         </div>
 
-          <div class="recent-work box mt-[50vh]">
+          <div class="recent-work box mt-[50vh]" id="work">
             <h1 class="font-black text-6xl text-white ml-[8vw]"><span class="font-black text-stroke-white">My Recent</span> Works</h1> 
 
             <div class="work-one mt-[15vh] ml-[12vw] flex">
@@ -216,7 +217,7 @@
       </div>
     </main>
 
-    <footer class="mt-[50vh] mb-[10vh] box">
+    <footer class="mt-[50vh] mb-[10vh] box" id="contact">
       <h1 class="font-medium text-stroke-white text-6xl text-center">Get In <span class="text-white">Touch</span></h1>
       <p class="text-center text-gray-400 mt-[5vh]">I am open to collaborating on your next project idea.</p>
 
