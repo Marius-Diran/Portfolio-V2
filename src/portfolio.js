@@ -25,14 +25,37 @@ window.addEventListener('scroll', () => {
   checkBoxes();
 });
 
+function resetProgressAnimation() {
+  for (let i = 1; i <= 5; i++) {
+    const bar = document.querySelector(`.inner-bar${i}`);
+    if (bar) {
+      bar.style.animation = 'none';         // Remove animation
+      void bar.offsetWidth;                 // Force reflow
+      bar.style.animation = '';             // Re-trigger animation from CSS
+    }
+  }
+}
+
 function checkBoxes() {
   const triggerBottom = window.innerHeight * 1;
   boxes.forEach(box => {
     const boxTop = box.getBoundingClientRect().top;
     const boxBottom = box.getBoundingClientRect().bottom;
+    
     if (boxTop < triggerBottom && boxBottom > 0) {
+      if (!box.classList.contains('show') && box.classList.contains('myskill-sec')) {
+        // Reset animation when myskill-sec enters viewport
+        resetProgressAnimation();
+      }
       box.classList.add('show');
     } else {
+      if (box.classList.contains('show') && box.classList.contains('myskill-sec')) {
+        // Reset animation state when myskill-sec leaves viewport
+        const bars = box.querySelectorAll('[class^="inner-bar"]');
+        bars.forEach(bar => {
+          bar.style.width = '0';
+        });
+      }
       box.classList.remove('show');
     }
   });

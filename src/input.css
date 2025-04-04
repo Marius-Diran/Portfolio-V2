@@ -21,13 +21,13 @@ body{
 .box {
     opacity: 0;
     transform: translateY(30px);
-    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
 }  
 
 .box.show {
     opacity: 1;
     transform: translateY(0);
-    transition: all 1s ease-in-out;
+    transition: all 1.5s ease-in-out;
 }
 
 @keyframes fallIn {
@@ -48,14 +48,179 @@ body{
     height: 5vh;
     background-color: rgb(48, 47, 47);
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(227, 38, 54, 0.3);
 }
 
-.inner-bars{
+.inner-bar1{
     background-color: rgb(227, 38, 54);
-    width: 90%;
+    width: 0%;
     margin: 0.62vh 0 0 0.5vw;
     height: 3.5vh;
     border-radius: 10px;
-    animation: progress 2s ease-in-out forwards;
+    animation: progress1 2s ease-in-out forwards;
     animation-delay: 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner-bar2{
+    background-color: rgb(227, 38, 54);
+    width: 0%;
+    margin: 0.62vh 0 0 0.5vw;
+    height: 3.5vh;
+    border-radius: 10px;
+    animation: progress2 2s ease-in-out forwards;
+    animation-delay: 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner-bar3{
+    background-color: rgb(227, 38, 54);
+    width: 0%;
+    margin: 0.62vh 0 0 0.5vw;
+    height: 3.5vh;
+    border-radius: 10px;
+    animation: progress3 2s ease-in-out forwards;
+    animation-delay: 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner-bar4{
+    background-color: rgb(227, 38, 54);
+    width: 0%;
+    margin: 0.62vh 0 0 0.5vw;
+    height: 3.5vh;
+    border-radius: 10px;
+    animation: progress4 2s ease-in-out forwards;
+    animation-delay: 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner-bar5{
+    background-color: rgb(227, 38, 54);
+    width: 0%;
+    margin: 0.62vh 0 0 0.5vw;
+    height: 3.5vh;
+    border-radius: 10px;
+    animation: progress5 2s ease-in-out forwards;
+    animation-delay: 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Progress animation */
+@keyframes progress1 {
+    0% { width: 0; }
+    100% { width: 90%; }
+}
+
+@keyframes progress2 {
+    0% { width: 0; }
+    100% { width: 16%; }
+}
+
+@keyframes progress3 {
+    0% { width: 0; }
+    100% { width: 60%; }
+}
+
+@keyframes progress4 {
+    0% { width: 0; }
+    100% { width: 70%; }
+}
+
+@keyframes progress5 {
+    0% { width: 0; }
+    100% { width: 10%; }
+}
+
+/* Wave animation */
+@keyframes wave {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Add this: creates the wave effect with gradient */
+.inner-bar1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+                rgba(227, 38, 54, 0.8) 0%, 
+                rgba(240, 80, 83, 0.9) 50%, 
+                rgba(227, 38, 54, 0.8) 100%);
+    background-size: 200% 100%;
+    animation: wave 2s infinite ease-in-out;
+    border-radius: 10px;
+}
+
+.inner-bar2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+                rgba(227, 38, 54, 0.8) 0%, 
+                rgba(240, 80, 83, 0.9) 50%, 
+                rgba(227, 38, 54, 0.8) 100%);
+    background-size: 200% 100%;
+    animation: wave 2s infinite ease-in-out;
+    border-radius: 10px;
+}
+
+.inner-bar3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+                rgba(227, 38, 54, 0.8) 0%, 
+                rgba(240, 80, 83, 0.9) 50%, 
+                rgba(227, 38, 54, 0.8) 100%);
+    background-size: 200% 100%;
+    animation: wave 2s infinite ease-in-out;
+    border-radius: 10px;
+}
+
+.inner-bar4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+                rgba(227, 38, 54, 0.8) 0%, 
+                rgba(240, 80, 83, 0.9) 50%, 
+                rgba(227, 38, 54, 0.8) 100%);
+    background-size: 200% 100%;
+    animation: wave 2s infinite ease-in-out;
+    border-radius: 10px;
+}
+
+.inner-bar5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+                rgba(227, 38, 54, 0.8) 0%, 
+                rgba(240, 80, 83, 0.9) 50%, 
+                rgba(227, 38, 54, 0.8) 100%);
+    background-size: 200% 100%;
+    animation: wave 2s infinite ease-in-out;
+    border-radius: 10px;
 }
