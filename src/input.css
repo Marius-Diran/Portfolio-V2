@@ -248,6 +248,16 @@ body{
     }
 }
 
+@media (max-width: 371px) and (min-width: 320px) {
+    .light {
+        margin-right: 3.5vw;
+    }
+
+    .contact-btn {
+        margin-left: 29vw;
+    }
+}
+
 @media (max-width: 425px) and (min-width: 375px) {
     .light {
         margin-right: 3.5vw;
