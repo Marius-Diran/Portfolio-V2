@@ -67,11 +67,16 @@ function checkBoxes() {
   });
 }
 
-document.getElementsByClassName('.work-img').addEventListener('click', function() {
-  this.classList.add('animate-pulse');
-  setTimeout(() => {
-    this.classList.remove('animate-pulse');
-  }, 5000); // Duration of the pulse animation
-})
+document.querySelectorAll('.workimg-div').forEach(element => {
+  element.addEventListener('click', function() {
+    this.classList.toggle('animate-pulse');
+    this.classList.remove('grayscale');
+
+    setTimeout(() => {
+      this.classList.remove('animate-pulse');
+      this.classList.add('grayscale');
+    }, 6000)
+  });
+});
 
 checkBoxes(); // Initial check to show boxes on page load
