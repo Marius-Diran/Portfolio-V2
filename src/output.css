@@ -578,6 +578,9 @@
   .px-1 {
     padding-inline: calc(var(--spacing) * 1);
   }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -883,6 +886,16 @@
       margin-left: calc(var(--spacing) * 0);
     }
   }
+  .max-sm\:ml-1\.5 {
+    @media (width < 40rem) {
+      margin-left: calc(var(--spacing) * 1.5);
+    }
+  }
+  .max-sm\:ml-2 {
+    @media (width < 40rem) {
+      margin-left: calc(var(--spacing) * 2);
+    }
+  }
   .max-sm\:ml-3 {
     @media (width < 40rem) {
       margin-left: calc(var(--spacing) * 3);
@@ -988,6 +1001,16 @@
       width: 95%;
     }
   }
+  .max-sm\:w-\[96\%\] {
+    @media (width < 40rem) {
+      width: 96%;
+    }
+  }
+  .max-sm\:w-\[97\%\] {
+    @media (width < 40rem) {
+      width: 97%;
+    }
+  }
   .max-sm\:w-\[98\%\] {
     @media (width < 40rem) {
       width: 98%;
@@ -998,9 +1021,34 @@
       width: 100%;
     }
   }
+  .max-sm\:flex-col-reverse {
+    @media (width < 40rem) {
+      flex-direction: column-reverse;
+    }
+  }
   .max-sm\:justify-start {
     @media (width < 40rem) {
       justify-content: flex-start;
+    }
+  }
+  .max-sm\:px-0 {
+    @media (width < 40rem) {
+      padding-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .max-sm\:px-2 {
+    @media (width < 40rem) {
+      padding-inline: calc(var(--spacing) * 2);
+    }
+  }
+  .max-sm\:px-3 {
+    @media (width < 40rem) {
+      padding-inline: calc(var(--spacing) * 3);
+    }
+  }
+  .max-sm\:px-3\.5 {
+    @media (width < 40rem) {
+      padding-inline: calc(var(--spacing) * 3.5);
     }
   }
   .max-sm\:px-4 {
