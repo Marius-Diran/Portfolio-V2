@@ -866,6 +866,11 @@
       margin-left: calc(var(--spacing) * 0);
     }
   }
+  .max-sm\:ml-4 {
+    @media (width < 40rem) {
+      margin-left: calc(var(--spacing) * 4);
+    }
+  }
   .max-sm\:ml-5 {
     @media (width < 40rem) {
       margin-left: calc(var(--spacing) * 5);
