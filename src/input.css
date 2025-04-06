@@ -242,10 +242,18 @@ body{
     .light {
         margin-right: 3.5vw;
     }
+
+    .contact-btn {
+        margin-left: 26vw;
+    }
 }
 
 @media (max-width: 425px) and (min-width: 375px) {
     .light {
         margin-right: 3.5vw;
+    }
+
+    .contact-btn {
+        margin-left: 31.5vw;
     }
 }
