@@ -67,4 +67,11 @@ function checkBoxes() {
   });
 }
 
+document.getElementsByClassName('.work-img').addEventListener('click', function() {
+  this.classList.add('animate-pulse');
+  setTimeout(() => {
+    this.classList.remove('animate-pulse');
+  }, 5000); // Duration of the pulse animation
+})
+
 checkBoxes(); // Initial check to show boxes on page load
