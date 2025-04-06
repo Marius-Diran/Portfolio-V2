@@ -6,6 +6,8 @@ const introH1 = document.querySelector('.intro-h1');
 const boxes = document.querySelectorAll('.box');
 
 lightBtn.addEventListener('click', () => {
+  const isMobileView = window.matchMedia('(max-width: 640px)').matches; // Tailwind's max-sm breakpoint
+
   if (lightBtn.style.backgroundColor === 'green') {
     lightBtn.style.backgroundColor = '';
     controlBall.style.transform = 'translateX(0)';
@@ -14,7 +16,11 @@ lightBtn.addEventListener('click', () => {
     introH1.style.color = '';
   } else {
     lightBtn.style.backgroundColor = 'green';
-    controlBall.style.transform = 'translateX(180%)';
+    if (isMobileView) {
+      controlBall.style.transform = 'translateX(110%)';
+    } else {
+      controlBall.style.transform = 'translateX(180%)';
+    }
     lampLight.style.visibility = 'visible';
     introP1.style.color = '#FF3131';
     introH1.style.color = '#FFFFFF';
@@ -29,9 +35,9 @@ function resetProgressAnimation() {
   for (let i = 1; i <= 5; i++) {
     const bar = document.querySelector(`.inner-bar${i}`);
     if (bar) {
-      bar.style.animation = 'none';         // Remove animation
-      void bar.offsetWidth;                 // Force reflow
-      bar.style.animation = '';             // Re-trigger animation from CSS
+      bar.style.animation = 'none';
+      void bar.offsetWidth;
+      bar.style.animation = '';
     }
   }
 }

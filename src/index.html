@@ -6,30 +6,30 @@
     <link href="./output.css" rel="stylesheet">
   </head>
   <body class="bg-[rgba(2,3,23,1)] text-white overflow-x-hidden scroll-smooth">
-    <nav class="mx-auto flex justify-between items-center py-4 px-8 w-[70%] border-[0.5px] border-solid rounded-2xl border-[rgba(255,255,255,0.1)] bg-black/5 backdrop-blur-lg fixed top-12 left-0 right-0 z-50"> 
-      <div class="w-[6%] border-[1px] border-solid border-[rgba(255,255,255,0.60)] rounded-md py-3 px-1 hover:cursor-pointer hover:border-red-400"><a href="#home"><img src="assets/Plain-M.png" class="w-full"></a></div>
-      <ul class="flex justify-between w-[20%] ml-[32vw]">
-        <li class="text-sm"><a href="#about">About</a></li>
-        <li class="text-sm"><a href="#work">Work</a></li>
-        <li class="text-sm"><a href="#contact">Contact</a></li>
+    <nav class="mx-auto flex justify-between items-center py-4 px-8 w-[70%] border-[0.5px] border-solid rounded-2xl border-[rgba(255,255,255,0.1)] bg-black/5 backdrop-blur-lg fixed top-12 left-0 right-0 z-50 max-sm:w-[90%] max-sm:mx-auto max-sm:px-4"> 
+      <div class="w-[6%] border-[1px] border-solid border-[rgba(255,255,255,0.60)] rounded-md py-3 px-1 hover:cursor-pointer hover:border-red-400 max-sm:w-[12%] "><a href="#home"><img src="assets/Plain-M.png" class="w-full"></a></div>
+      <ul class="flex justify-between w-[20%] ml-[32vw] max-sm:ml-[5vw] max-sm:w-[50%]">
+        <li class="text-sm max-sm:text-[0.8rem]"><a href="#about">About</a></li>
+        <li class="text-sm max-sm:text-[0.8rem]"><a href="#work">Work</a></li>
+        <li class="text-sm max-sm:text-[0.8rem]"><a href="#contact">Contact</a></li>
       </ul>
-      <button class="relative flex items-center border-[0.1px] border-solid border-red-400/30 rounded-md py-3 px-5 overflow-hidden cursor-pointer hover:border-red-400/75">
-        <i class="fa-solid fa-file mr-2.5" style="color: #ff3d3d;"></i>
-        <h3 class="text-sm text-red-500">Resume</h3>
+      <button class="relative flex items-center border-[0.1px] border-solid border-red-400/30 rounded-md py-3 px-5 overflow-hidden cursor-pointer hover:border-red-400/75 max-sm:hidden">
+        <i class="fa-solid fa-file mr-2.5 sm-max:mr-5" style="color: #ff3d3d;"></i>
+        <h3 class="text-sm text-red-500 max-sm:hidden">Resume</h3>
         <span class="absolute inset-x-0 h-0.5 -bottom-[1px] bg-gradient-to-r w-3/4 mx-auto from-transparent via-rose-300 to-transparent"></span>
       </button>
 
-      <button class="bg-[#efefef] h-7 w-[6%] rounded-2xl cursor-pointer transition duration-500 ease-in-out light-control"><span class="block bg-[#999] w-[31%] h-5 rounded-full ml-1 transition duration-500 ease-in-out btn-ball"></span></button>
+      <button class="bg-[#efefef] h-7 w-[6%] rounded-2xl cursor-pointer transition duration-500 ease-in-out max-sm:w-[15%] light-control"><span class="block bg-[#999] w-[31%] h-5 rounded-full ml-1 transition duration-500 ease-in-out max-sm:w-[40%] btn-ball"></span></button>
     </nav>
 
     <header class="mt-[17vh]">
       <div class="container">
         <div class="intro">
-          <div class="lamp-container" id="home">
-            <div class="lamp mx-auto w-[8%]"><img src="assets/lamp.png" class="w-full"></div>
-            <div class="light ml-[33.8vw] w-[29%] -mt-1 invisible"><img src="assets/light.png" class="w-full"></div>
+          <div class="lamp-container max-sm:relative" id="home">
+            <div class="lamp mx-auto w-[8%] max-sm:w-[22%]"><img src="assets/lamp.png" class="w-full"></div>
+            <div class="light ml-[33.8vw] w-[29%] -mt-1 invisible max-sm:visible max-sm:absolute max-sm:right-[12vw] max-sm:w-[70%]"><img src="assets/light.png" class="w-full"></div>
           </div>
-          <div class="write-up w-fit mx-auto -mt-25 text-center">
+          <div class="write-up w-fit mx-auto -mt-25 text-center max-sm:mt-0 max-sm:text-center">
             <p class="text-lg py-2 text-[#b90025] transition duration-500 ease-in-out intro-p">Hi, I'm</p>
             <h1 class="text-6xl font-black text-stroke-white opacity-90 transition duration-500 ease-in-out intro-h1">Marius Odediran</h1>
           </div>

@@ -739,6 +739,96 @@
       }
     }
   }
+  .max-sm\:visible {
+    @media (width < 40rem) {
+      visibility: visible;
+    }
+  }
+  .max-sm\:absolute {
+    @media (width < 40rem) {
+      position: absolute;
+    }
+  }
+  .max-sm\:relative {
+    @media (width < 40rem) {
+      position: relative;
+    }
+  }
+  .max-sm\:right-\[12vw\] {
+    @media (width < 40rem) {
+      right: 12vw;
+    }
+  }
+  .max-sm\:mx-auto {
+    @media (width < 40rem) {
+      margin-inline: auto;
+    }
+  }
+  .max-sm\:mt-0 {
+    @media (width < 40rem) {
+      margin-top: calc(var(--spacing) * 0);
+    }
+  }
+  .max-sm\:ml-\[5vw\] {
+    @media (width < 40rem) {
+      margin-left: 5vw;
+    }
+  }
+  .max-sm\:hidden {
+    @media (width < 40rem) {
+      display: none;
+    }
+  }
+  .max-sm\:w-\[12\%\] {
+    @media (width < 40rem) {
+      width: 12%;
+    }
+  }
+  .max-sm\:w-\[15\%\] {
+    @media (width < 40rem) {
+      width: 15%;
+    }
+  }
+  .max-sm\:w-\[22\%\] {
+    @media (width < 40rem) {
+      width: 22%;
+    }
+  }
+  .max-sm\:w-\[40\%\] {
+    @media (width < 40rem) {
+      width: 40%;
+    }
+  }
+  .max-sm\:w-\[50\%\] {
+    @media (width < 40rem) {
+      width: 50%;
+    }
+  }
+  .max-sm\:w-\[70\%\] {
+    @media (width < 40rem) {
+      width: 70%;
+    }
+  }
+  .max-sm\:w-\[90\%\] {
+    @media (width < 40rem) {
+      width: 90%;
+    }
+  }
+  .max-sm\:px-4 {
+    @media (width < 40rem) {
+      padding-inline: calc(var(--spacing) * 4);
+    }
+  }
+  .max-sm\:text-center {
+    @media (width < 40rem) {
+      text-align: center;
+    }
+  }
+  .max-sm\:text-\[0\.8rem\] {
+    @media (width < 40rem) {
+      font-size: 0.8rem;
+    }
+  }
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 html {
@@ -961,6 +1051,16 @@ body {
   background-size: 200% 100%;
   animation: wave 2s infinite ease-in-out;
   border-radius: 10px;
+}
+@media (max-width: 375px) and (min-width: 320px) {
+  .light {
+    margin-right: 3.5vw;
+  }
+}
+@media (max-width: 425px) and (min-width: 375px) {
+  .light {
+    margin-right: 3.5vw;
+  }
 }
 @property --tw-rotate-x {
   syntax: "*";
